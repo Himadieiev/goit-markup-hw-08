@@ -1,0 +1,9 @@
+.header {
+  border-bottom: 1px solid #ECECEC;
+}
+
+.container-header {
+  display: flex;
+  align-items: center;
+  background-color: $header-background-color;
+}
