@@ -22,6 +22,11 @@
 .address__item--position {
   margin-top: 9px;
   margin-bottom: 9px;
+
+  @media screen and (max-width: 1199px) {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
 }
 
 .address__mail {

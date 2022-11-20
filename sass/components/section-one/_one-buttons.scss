@@ -1,5 +1,4 @@
 .button-main {
-  padding: 10px 32px;
   display: inline-block;
 
   background-color: $second-color;
@@ -20,6 +19,14 @@
     &:hover,
     &:focus {
       background-color: #188CE8;
+    }
+
+  @media screen and (max-width: 1199px) {
+    padding: 10px 24px;
+    }
+  
+  @media screen and (min-width: 1200px) {
+    padding: 10px 32px;
     }
 }
 

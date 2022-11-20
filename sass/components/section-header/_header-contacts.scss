@@ -1,17 +1,28 @@
 .contacts-list {
-  display: flex;
-  width: 333px;
-  justify-content: space-between;
-  margin-left: auto;
-  padding-left: 0;
+  @media screen and (max-width: 767px) {
+      display: block;
+    }
+  
+  @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: column-reverse;
+      flex-wrap: wrap;
+      margin-left: 90px;
+      margin-bottom: auto;
+      margin-top: auto;
+    }
+  
+  @media screen and (min-width: 1200px) {
+      display: flex;
+      flex-direction: row-reverse;
+      width: 333px;
+      justify-content: space-between;
+      margin-left: 315px;
+      padding-left: 0;
+    }
 }
 
 .contacts-list__link {
-  display: flex;
-  align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -26,16 +37,71 @@
      fill: $hoverfocus-color;
      color: $hoverfocus-color;
      }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    }
+}
+
+.contacts-list__link--tel {
+  @media screen and (max-width: 767px) {
+    font-size: 34px;
+    line-height: 1.18;
+    color: $second-color;
+    }
+
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: 1.17;
+    }
+}
+
+.contacts-list__link--mail {
+  @media screen and (max-width: 767px) {
+    font-size: 24px;
+    line-height: 1.17;
+    }
+
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: 1.17;
+    }
 }
 
 .contacts-list__icon {
   margin-right: 10px;
 
   fill: currentColor;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+    }
+
+  @media screen and (max-width: 1199px) {
+    margin-right: 8px;
+    }
 }
 
 .contacts-list__item {
-   &:not(:last-child) {
-     margin-right: 30px;
-     }
+  @media screen and (max-width: 767px) {
+    margin-bottom: 32px;
+    }
+  }
+
+.contacts-list__icon--tel {
+  @media screen and (max-width: 1199px) {
+    width: 14px;
+    height: 10px;
+    margin-left: -3px;
+    }
+  }
+
+.contacts-list__icon--mail {
+  @media screen and (max-width: 1199px) {
+    width: 10px;
+    height: 14px;
+    }
   }

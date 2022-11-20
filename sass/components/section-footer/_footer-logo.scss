@@ -1,8 +1,13 @@
 .logo-address{
-  &:not(:last-child) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 231px;
-    margin-right: 70px;
-    }
+    margin-right: 165px;
+    margin-left: 65px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .logo-footer {
@@ -15,4 +20,9 @@
   letter-spacing: 0.03em;
   color: $third-color;
   text-decoration: none;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 24px;
+    line-height: 1.17;
+  }
 }

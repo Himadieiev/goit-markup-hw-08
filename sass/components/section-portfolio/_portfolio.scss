@@ -1,7 +1,18 @@
 .portfolio__filter {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 50px;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 40px;
+    width: 350px;
+    height: 91px;
+    }
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 30px;
+    }
 }
 
 .portfolio__button {
@@ -22,6 +33,11 @@
   border-left: 1px solid #EEEEEE;
   border-right: 1px solid #EEEEEE;
   border-bottom: 1px solid #EEEEEE;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+      height: 146px;
+      max-width: 354px;
+    }
 }
 
 .potrfolio__link {
@@ -60,4 +76,14 @@
   position: relative;
 
   overflow: hidden;
+}
+
+.portfolio__image--width {
+  @media screen and (max-width: 767px) {
+    width: 450px;
+    }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 354px;
+    }
 }

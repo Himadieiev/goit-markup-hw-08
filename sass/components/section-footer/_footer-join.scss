@@ -1,12 +1,26 @@
+.join {
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+    }
+}
+
 .join__text {
   margin-bottom: 20px;
 
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $third-color;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
 }
 
 .join__socialmedia {
@@ -36,3 +50,4 @@
       background-color: $hoverfocus-color;
     }
 }
+

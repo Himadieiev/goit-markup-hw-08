@@ -19,4 +19,14 @@
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: $third-color;
-}
+
+  @media screen and (max-width: 767px) {
+    padding-top: 77px;
+    padding-bottom: 77px;
+    }
+  
+  @media screen and (max-width: 1199px) {
+    padding-top: 49px;
+    padding-bottom: 49px;
+    }
+}  
