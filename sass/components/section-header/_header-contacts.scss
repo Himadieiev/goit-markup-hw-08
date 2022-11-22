@@ -8,8 +8,6 @@
       flex-direction: column-reverse;
       flex-wrap: wrap;
       margin-left: 90px;
-      margin-bottom: auto;
-      margin-top: auto;
     }
   
   @media screen and (min-width: 1200px) {
@@ -41,7 +39,6 @@
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     align-items: center;
-    justify-content: center;
     }
 
   @media screen and (min-width: 1200px) {
@@ -63,6 +60,11 @@
     font-size: 12px;
     line-height: 1.17;
     }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.14;
+    }
 }
 
 .contacts-list__link--mail {
@@ -74,6 +76,12 @@
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     font-size: 12px;
     line-height: 1.17;
+    margin-bottom: 10px;
+    }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.14;
     }
 }
 
@@ -99,15 +107,14 @@
 
 .contacts-list__icon--tel {
   @media screen and (max-width: 1199px) {
-    width: 14px;
-    height: 10px;
-    margin-left: -3px;
+    width: 10px;
+    height: 14px;
     }
   }
 
 .contacts-list__icon--mail {
   @media screen and (max-width: 1199px) {
-    width: 10px;
-    height: 14px;
+    width: 14px;
+    height: 10px;
     }
   }

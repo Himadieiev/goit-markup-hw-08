@@ -37,7 +37,7 @@
     @media screen and (max-width: 767px) {
       margin-top: 30px;
       width: 450px;
-      height: 622px;
+      padding-bottom: 24px;
     }
   
     @media screen and (min-width: 768px) {
@@ -52,8 +52,8 @@
 }
 
 .team__photo {
-  padding-top: 30px;
-  padding-bottom: 16px;
+  margin-top: 30px;
+  margin-bottom: 16px;
 }
 
 .team__subtitle {

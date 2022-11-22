@@ -20,12 +20,11 @@
 .feature__item {
   @media screen and (min-width: 480px) {
       width: 450px;
-      height: 226px;
     }
-  
-  @media screen and (min-width: 768px) {
-      width: 354px;
+    
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
       height: 224px;
+      flex-basis: calc((100% - 30px) / 2);
     }
   
   @media screen and (min-width: 1200px) {
@@ -33,6 +32,12 @@
       height: 248px;
     }
 }
+
+@media screen and (max-width: 767px) {
+  .feature__item:not(:last-child) {
+    margin-bottom: 30px;
+    }
+  }
 
 .feature__subtitle {
   margin-bottom: 10px;

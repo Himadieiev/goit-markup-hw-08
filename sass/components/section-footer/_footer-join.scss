@@ -1,4 +1,8 @@
 .join {
+  @media screen and (max-width: 767px) {
+      margin-top: 60px;
+    }
+
   @media screen and (min-width: 1200px) {
     margin-left: 70px;
     }
@@ -17,18 +21,14 @@
   @media screen and (max-width: 1199px) {
     text-align: center;
   }
-
-  @media screen and (max-width: 767px) {
-    margin-top: 60px;
-  }
 }
 
 .join__socialmedia {
   display: flex;
-  width: 206px;
+  justify-content: center;
+  gap: 10px;
   margin-left: auto;
   margin-right: auto;
-  justify-content: space-between;
 }
 
 .join__link {
